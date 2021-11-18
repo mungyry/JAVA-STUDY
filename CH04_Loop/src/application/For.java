@@ -15,9 +15,10 @@ public class For {
 			
 		// 예제) for 반복문을 사용하여 1에서 100까지의 합을 출력하라
 		
-		for(int a=0; a <= 100; a++) {
-			int sum = 0;
-			sum = sum + a;
+
+		int sum = 0;
+		for(int a=1; a <= 100; a++) {
+		sum = sum + a;
 			System.out.println(sum);
 		}
 	}
