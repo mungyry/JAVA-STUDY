@@ -20,21 +20,40 @@ public class Ex1 {
 		int a = scanner.nextInt();
 		scanner.close();  //스캐너 종료문
 				
-		if (a == 1) {
-			System.out.println("헬로우");			
-		}
-		else if(a == 2) {
+//		if (a == 1) {
+//			System.out.println("헬로우");			
+//		}
+//		else if(a == 2) {
+//			System.out.println("안녕?");
+//		}
+//		else if(a == 3) {
+//			System.out.println("종료 합니다...");
+//		}
+//		else if( a == 10000) {
+//			System.out.println("이스터에그를 발견했습니다.");
+//		}
+//		else{
+//		System.out.println("잘못된 입력입니다");
+		
+		// switch 문으로 만들기
+		
+		switch(a) {
+		case 1:
+			System.out.println("헬로우");
+			break;
+		case 2:
 			System.out.println("안녕?");
-		}
-		else if(a == 3) {
-			System.out.println("종료 합니다...");
-		}
-		else if( a == 10000) {
+			break;
+		case 3:
+			System.out.println("종료합니다...");
+			break;
+		case 10000:
 			System.out.println("이스터에그를 발견했습니다.");
-		}
-		else{
-		System.out.println("잘못된 입력입니다");
-
+			break;
+		default :
+			System.out.println("잘못된 입력입니다.");
+			break;
+			
 	}
 	}
 }
