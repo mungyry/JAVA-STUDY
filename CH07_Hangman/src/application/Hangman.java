@@ -38,6 +38,20 @@ public class Hangman {
 		
 	}
 	private void checkUserInput() {
-		System.out.println("맞는지 체크");
+		// System.out.println("맞는지 체크");
+		// 게임 종료 확인을 하는 메소드 isCompleted를 RandomWord 클래스에 만들기
+		if(word.isCompleted()) {
+			System.out.println("잘 맞췄어요!");
+			System.out.println("정답은 : " + word.toString());
+			running = false; // 반복문 종료
+		}
+	}
+
+	/**
+	 * 스캐너를 닫는 메소드 
+	 */
+	public void close() {
+		scanner.close();
+		
 	}
 }
