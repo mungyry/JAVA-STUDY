@@ -9,8 +9,6 @@ class Task extends TimerTask{
 	public void run() {
 		System.out.println("헬로우");
 	}
-	
-	
 }
 
 public class App {
