@@ -33,6 +33,10 @@ public class App {
 //		new Printer().print();
 		
 		ScheduledExecutorService service = Executors.newScheduledThreadPool(1);
-		service.scheduleAtFixedRate(new Printer(), 0L, 1L, TimeUnit.SECONDS);
+		service.scheduleAtFixedRate(new Runnable() {
+			public void run() {
+				System.out.println(name);
+			}
+		}, 0L, 1L, TimeUnit.SECONDS);
 	}
 	}
