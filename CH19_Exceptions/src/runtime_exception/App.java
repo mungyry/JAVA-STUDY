@@ -1,11 +1,11 @@
-package throwing_exception;
+package runtime_exception;
 
 public class App {
 
 	public static void main(String[] args) throws Exception {
 		Thermostat stat = new Thermostat();
 		
-		stat.setTemperature(36);
+		stat.setTemperature(30);
 
 	}
 
