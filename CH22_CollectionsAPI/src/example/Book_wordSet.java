@@ -36,7 +36,7 @@ public class Book_wordSet {
 			String line = null;
 			// 한줄 읽기
 			while((line = reader.readLine()) !=null){
-				String [] words = line.split("[^a-zA-Z]+");
+				String[] words = line.split("[^a-zA-Z]+"); // +는 . 공배 등 영어외에 다른것들을 제거한다
 				for(String w : words) {
 					if(w.length() < 6) {
 						continue;
