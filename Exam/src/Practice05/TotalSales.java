@@ -10,7 +10,7 @@ public class TotalSales {
 		Store store = new Store();
 		
 		// 3. 하루 총 매출을 계산하세요
-		System.out.println("총 매출 %d원", store. ?);
+		System.out.println("총 매출 %d원", store);
 		
 	}
 
