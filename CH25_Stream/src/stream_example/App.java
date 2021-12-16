@@ -1,4 +1,4 @@
-package example;
+package stream_example;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +19,8 @@ public class App {
 		numbers.forEach(System.out::println);
 		System.out.println();
 		numbers.stream()
-		.filter(n -> n > 5 )
-		.map(n -> n *n)
-		.forEach(System.out::println);
+			.filter(n -> n > 5 )
+			.map(n -> n *n)
+			.forEach(System.out::println);
 	}
 }
